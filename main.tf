@@ -22,7 +22,7 @@ module "config" {
   name               = var.name
   region             = var.region
   vpc_id             = module.vpc.vpc_id
-  instance_type      = "m5.2xlarge"
-  public_key_name    = "joaquin"
+  instance_type      = "t2.micro"
+  public_key_name    = "deploykey"
   filename           = "${path.module}/cluster_config.yaml"
 }
