@@ -1,7 +1,16 @@
 
-variable "region" {}
-variable "eks_cluster_name" { default = "" }
-variable "name" {}
+variable "region" {
+  default = "us-east-1"
+}
+
+variable "eks_cluster_name" {
+  default = "doms-cluster"
+}
+
+variable "name" {
+  default = "dom"
+}
+
 
 variable "cidr" {
   default = "192.168.0.0/16"
