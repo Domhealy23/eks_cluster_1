@@ -21,4 +21,3 @@ locals {
 
   cluster_config_values = templatefile("${path.module}/cluster_config.yaml.tmpl", local.cluster_config_vars)
 }
-}
