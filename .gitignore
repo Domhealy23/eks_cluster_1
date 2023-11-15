@@ -1,0 +1,32 @@
+# Ignore Terraform state files
+*.tfstate
+*.tfstate.backup
+*.tfstate.backup.*
+*.tfstate.lock.info
+
+# Ignore .terraform directory
+**/.terraform/*
+
+# Ignore any files ending in .tfvars, which typically contain sensitive variable information
+*.tfvars
+
+# Ignore provider-specific plugin directories
+**/.terraform/plugins/*
+
+# Ignore .tfplan files, which are created when running 'terraform plan'
+*.tfplan
+
+# Ignore any local files or directories specific to your environment (if any)
+/.terraform.tfstate.d/
+/.terraform/plugins/
+
+# Ignore Terraform log files
+terraform.log
+
+# Ignore macOS directory files
+.DS_Store
+
+# Ignore any generated files or directories
+**/vpc/terraform.tfstate.backup
+**/vpc/.terraform/
+
